@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <title>Inscripcion</title>
+    <!-- tipografia ne linea -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- encabezado -->
+     <header>
+        <div id="logo">
+            <h1>TechAcademy</h1>
+        </div>
+        <nav class="navPrincipal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="mentorias.html">Mentorias</a></li>
+                <li><a href="inscripcion.html" id="btn_destacado">Inscribirse</a></li>
+            </ul>
+        </nav>
+     </header>
+     <main>
+    <section class="formulario">
+        <h2>Formulario de inscripción</h2>
+        <p>Completa los siguientes datos para inscribirte a uno de nuestros cursos.</p>
+
+        <form action="#" method="post">
+
+            <div class="campo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" 
+                       placeholder="Escribe tu nombre completo" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" 
+                       placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" 
+                       placeholder="10 dígitos" required>
+            </div>
+
+            <div class="campo">
+                <label for="curso">Selecciona un curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">-- Selecciona un curso --</option>
+                    <option value="html-css">Uso de Base de Datos</option>
+                    <option value="javascript">Uso de la IA</option>
+                    <option value="java">Introduccion a la Ciberseguridad</option>
+                    <option value="python">Python</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Modalidad:</label>
+
+                <label>
+                    <input type="radio" name="modalidad" value="presencial" required>
+                    Presencial
+                </label>
+
+                <label>
+                    <input type="radio" name="modalidad" value="en-linea">
+                    En línea
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" 
+                          placeholder="Escribe algún comentario..."></textarea>
+            </div>
+
+            <div class="campo">
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los términos y condiciones.
+                </label>
+            </div>
+
+            <button type="submit">Enviar inscripción</button>
+
+        </form>
+    </section>
+</main>
+<footer>
+        <p>&copy; 2026 TechAcademy</p>
+    </footer>
+</body>
+</html>
